@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "JetBrains Mono", monospace;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container-bg-img {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 10px);
+    overflow: hidden;
+}
+
+img.logo-head {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+ul.navbar {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .nav-links a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar .nav-links a:hover {
+    color: cornsilk;
+}
+
+.right-search input[type=text] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 5px;
+    background: #000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.overlay-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.stack {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.overlay-content-img {
+    flex: 1;
+}
+
+.overlay-content-img img {
+    max-width: 100%;
+    width: 40em;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+.overlay-content-text {
+    color: #fff;
+}
+
+.overlay-content-btns {
+    margin-top: 10px;
+}

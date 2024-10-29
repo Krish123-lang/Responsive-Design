@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --background-color: hsl(212, 45%, 89%);
+}
+
+p {
+    font-size: 15px;
+}
+
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+:root {
+    --background-color: #f0f0f0;
+    --white: #ffffff;
+}
+
+/* Use flexbox for layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Make the container responsive */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* Use rem for scalability */
+    width: min(90%, 500px);
+    /* This limits the width and keeps it fluid */
+    background-color: var(--background-color);
+}
+
+/* Use grid for content inside the container */
+.qr-div {
+    display: grid;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the image responsive */
+.qr-div figure {
+    margin: 0;
+}
+
+.qr-div img {
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+}
+
+/* Responsive typography using relative units */
+.qr-text {
+    text-align: center;
+}
+
+.qr-text h3 {
+    font-size: 1.25rem;
+    /* Use rem for scalable typography */
+    margin: 0;
+}
+
+.qr-text p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #555;
+}
